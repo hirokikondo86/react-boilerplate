@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-git clone https://github.com/hirokikondo86/react-ts-boilerplate.git
+git clone https://github.com/hirokikondo86/react-boilerplate.git
 ```
 
 ## Running
@@ -14,3 +14,9 @@ yarn start
 ```
 
 Access the web endpoint at http://localhost:3000
+
+## Build
+
+```bash
+yarn build
+```

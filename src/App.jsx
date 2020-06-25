@@ -1,7 +1,7 @@
 import React from 'react';
 import Hoge from './components/Hoge';
 
-const App: React.FC = () => {
+const App = () => {
   return <Hoge />;
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Hoge: React.FC = () => {
+const Hoge = () => {
   return (
     <>
       <H1>This is React boilerplate</H1>

@@ -8,7 +8,7 @@ const public = path.resolve(__dirname, 'public');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: src + '/index.tsx',
+  entry: src + '/index.jsx',
   output: {
     path: public,
     publicPath: '/',
@@ -43,14 +43,8 @@ module.exports = {
       },
       {
         // js
-        test: /\.js$/,
+        test: /\.jsx$/,
         use: 'babel-loader',
-        exclude: /node_modules/,
-      },
-      {
-        // tsx
-        test: /\.tsx?$/,
-        use: 'ts-loader',
         exclude: /node_modules/,
       },
       {
@@ -69,6 +63,6 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({ template: src + '/index.html' })],
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json'],
+    extensions: ['.js', '.jsx', '.json'],
   },
 };
